@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Educativo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Encabezado principal -->
+    <header>
+        <h1>Ciudadanía Digital</h1>
+        <p>Página de ciudadanía digital</p>
+        <p>CEPE: Centro Educativo Para Estudiantes</p>
+        <nav>
+            <ul class="tabs">
+                <li><a href="#sistema-binario" class="tab-link" onclick="showTab('sistema-binario')">Sistema Binario</a></li>
+                <li><a href="#tipos-datos" class="tab-link" onclick="showTab('tipos-datos')">Tipos de Datos</a></li>
+                <li><a href="#tecnologia" class="tab-link" onclick="showTab('tecnologia')">Tecnología Análoga y Digital</a></li>
+                <li><a href="#hardware" class="tab-link" onclick="showTab('hardware')">Hardware</a></li>
+                <li><a href="#piramide" class="tab-link" onclick="showTab('piramide')">Pirámide del Conocimiento</a></li>
+                <li><a href="#internet" class="tab-link" onclick="showTab('internet')">Internet</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Sección de Introducción -->
+    <section id="introduccion">
+        <h2>¿Qué es sociedad digital?</h2>
+        <p>La sociedad digital es un término que describe el impacto de las tecnologías digitales en todos los aspectos de la vida cotidiana...</p>
+        <!-- Agregar imagen aquí -->
+        <img src="ruta-de-tu-imagen/sociedad-digital.jpg" alt="Sociedad Digital" width="300">
+    </section>
+
+    <!-- Contenidos de los subtemas como pestañas -->
+    <section id="sistema-binario" class="tab-content">
+        <h2>Sistema Binario</h2>
+        <p>El sistema binario es un sistema numérico que utiliza solo dos dígitos: el 0 y el 1...</p>
+        <!-- Agregar imagen del sistema binario -->
+        <img src="ruta-de-tu-imagen/sistema-binario.jpg" alt="Sistema Binario" width="300">
+    </section>
+
+    <section id="tipos-datos" class="tab-content">
+        <h2>Tipos de Datos</h2>
+        <p>Los tipos de datos son categorías que definen el tipo de valor que una variable puede almacenar...</p>
+        <!-- Agregar imagen para tipos de datos -->
+        <img src="ruta-de-tu-imagen/tipos-datos.jpg" alt="Tipos de Datos" width="300">
+    </section>
+
+    <section id="tecnologia" class="tab-content">
+        <h2>Tecnología Análoga y Digital</h2>
+        <p>La tecnología análoga se basa en la representación continua de la información...</p>
+        <!-- Agregar imagen de tecnología análoga y digital -->
+        <img src="ruta-de-tu-imagen/tecnologia-analogica-digital.jpg" alt="Tecnología Análoga y Digital" width="300">
+    </section>
+
+    <section id="hardware" class="tab-content">
+        <h2>Hardware</h2>
+        <p>El hardware se refiere a los componentes físicos de un sistema informático...</p>
+        <!-- Agregar imagen de hardware -->
+        <img src="ruta-de-tu-imagen/hardware.jpg" alt="Hardware" width="300">
+    </section>
+
+    <section id="piramide" class="tab-content">
+        <h2>Pirámide del Conocimiento</h2>
+        <p>La pirámide del conocimiento es un modelo conceptual que describe la relación entre datos, información...</p>
+        <!-- Agregar imagen de la pirámide del conocimiento -->
+        <img src="ruta-de-tu-imagen/piramide-conocimiento.jpg" alt="Pirámide del Conocimiento" width="300">
+    </section>
+
+    <section id="internet" class="tab-content">
+        <h2>Internet</h2>
+        <p>El internet es una red global de comunicación que conecta millones de computadoras y dispositivos...</p>
+        <!-- Agregar imagen de internet -->
+        <img src="ruta-de-tu-imagen/internet.jpg" alt="Internet" width="300">
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 César Romero - Guillermo Árevalo</p>
+    </footer>
+
+    <!-- Script para mostrar las pestañas correspondientes -->
+    <script>
+        function showTab(tabId) {
+            var tabs = document.getElementsByClassName('tab-content');
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].style.display = 'none';
+            }
+            document.getElementById(tabId).style.display = 'block';
+        }
+
+        // Mostrar el primer tab por defecto al cargar la página
+        document.addEventListener('DOMContentLoaded', function() {
+            showTab('sistema-binario');
+        });
+    </script>
+
+</body>
+</html>
